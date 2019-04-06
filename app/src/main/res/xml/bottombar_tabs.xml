@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <tabs>
+        <tab
+            id="@+id/tab_home_page"
+            icon="@drawable/ic_home_page"
+            title="首页" />
+        <tab
+            id="@+id/tab_community"
+            icon="@drawable/ic_community"
+            title="社区" />
+        <tab
+            id="@+id/tab_messages"
+            icon="@drawable/ic_messages"
+            title="消息" />
+        <tab
+            id="@+id/tab_find"
+            icon="@drawable/ic_find"
+            title="发现"/>
+        <tab
+            id="@+id/tab_my"
+            icon="@drawable/ic_my"
+            title="我的"/>
+    </tabs>
+</PreferenceScreen>

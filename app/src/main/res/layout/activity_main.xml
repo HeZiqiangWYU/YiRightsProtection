@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.MainActivity">
+
+    <!--Fragment容器-->
+    <FrameLayout
+        android:id="@+id/contentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom_navigation"
+        android:fitsSystemWindows="true">
+    </FrameLayout>
+
+
+    <!--底部导航栏-->
+    <!--<com.roughike.bottombar.BottomBar-->
+        <!--android:id="@+id/bottom_bar"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="60dp"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--app:bb_tabXmlResource="@xml/bottombar_tabs"-->
+        <!--app:bb_behavior="underNavbar"-->
+        <!--app:bb_badgesHideWhenActive="false">-->
+    <!--</com.roughike.bottombar.BottomBar>-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.04dp"
+        android:background="@color/gray"
+        android:layout_above="@id/bottom_navigation"/>
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:menu="@menu/bottom_navigation"
+        android:layout_alignParentBottom="true">
+
+    </android.support.design.widget.BottomNavigationView>
+</RelativeLayout>
